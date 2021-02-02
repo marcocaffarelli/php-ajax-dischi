@@ -1,1 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  width: 100vw;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header {
+  background-color: black;
+}
+header nav {
+  height: 80px;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+header nav img {
+  height: 50%;
+}
