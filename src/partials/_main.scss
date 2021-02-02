@@ -1,0 +1,30 @@
+main{
+    width: 100%;
+
+    .container_cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 100px 0;
+
+        .card{
+            background-color: $colorePrimario;
+            display: inline-block;   
+            height: 400px;
+            width: 25%;
+            color: $coloreTestiCards;
+            text-align: center;
+            margin: 10px 30px;
+
+            img{
+                width: 100%;
+                padding: 20px;
+            }
+            h3{
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: $coloreTitoloCards;
+            }
+        }
+    }
+}
