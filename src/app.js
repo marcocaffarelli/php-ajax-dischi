@@ -6,7 +6,7 @@ let app = new Vue({
         arrayDischi: [],
     },
     mounted(){
-        axios.get("http://localhost/php-ajax-dischi/milestone-2/parti_php/database.php")
+        axios.get("http://localhost/php-ajax-dischi/bonus/parti_php/database.php")
         .then(response =>{
             //verifico lo stato della risposta
             //console.log(response);

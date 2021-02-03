@@ -19,7 +19,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get("http://localhost/php-ajax-dischi/milestone-2/parti_php/database.php").then(function (response) {
+    axios.get("http://localhost/php-ajax-dischi/bonus/parti_php/database.php").then(function (response) {
       //verifico lo stato della risposta
       //console.log(response);
       //console.log(response.data);
