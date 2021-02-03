@@ -9,7 +9,6 @@
     </head>
     <body>
         <div id="app">
-        <h1>{{messaggio}}</h1>
             <!-- header -->
             <header>
                 <nav>
@@ -21,7 +20,12 @@
             <!-- main -->
             <main>
                 <div class="container_cards">
-                    
+                    <div class="card" v-for = "dischi in arrayDischi">
+                        <img :src="dischi.poster" >
+                        <h3>{{dischi.titolo}}</h3>
+                        <div>{{dischi.artista}}</div>
+                        <div>{{dischi.anno}}</div>
+                    </div>
                 </div> 
             </main>
             <!-- /main -->

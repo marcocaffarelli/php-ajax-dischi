@@ -14,13 +14,21 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#app",
   data: {
-    messaggio: "Vue con laravelmix"
+    arrayDischi: []
   },
   mounted: function mounted() {
+    var _this = this;
+
     axios.get("http://localhost/php-ajax-dischi/milestone-2/parti_php/database.php").then(function (response) {
       //verifico lo stato della risposta
       //console.log(response);
-      console.log(response.data);
+      //console.log(response.data);
+      var dischi = response.data; //console.log(dischi);
+
+      dischi.forEach(function (element) {
+        //console.log(element);
+        _this.arrayDischi.push(element);
+      });
     })["catch"](function (error) {//console.log(error);
     });
   }
