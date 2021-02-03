@@ -13,6 +13,17 @@
             <header>
                 <nav>
                     <img src="../dist/img/logo.png" alt="logo di spotify">
+                    <div>
+                        <select class="menu" v-model="selected">
+                            <option>Tutti</option>
+                            <option>Bon Jovi</option>
+                            <option>Iron Maiden</option>
+                            <option>Eric Clapton</option>
+                            <option>Queen</option>
+                            <option>Sting</option>
+                            <option>Steve Gadd Band</option>
+                        </select>
+                    </div>
                 </nav>
             </header>
             <!-- /header -->
@@ -20,7 +31,7 @@
             <!-- main -->
             <main>
                 <div class="container_cards">
-                    <div class="card" v-for = "dischi in arrayDischi">
+                    <div class="card" v-for = "dischi in arrayDischi" v-if="selected == dischi.artista || selected == 'Tutti'">
                         <img :src="dischi.poster" >
                         <h3>{{dischi.titolo}}</h3>
                         <div>{{dischi.artista}}</div>

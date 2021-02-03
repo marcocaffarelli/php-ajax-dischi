@@ -21,10 +21,24 @@ header {
 header nav {
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 header nav img {
   height: 50%;
+}
+header nav div select {
+  background-color: #1dd05d;
+  font-weight: bold;
+  padding: 3px 6px;
+  border: none;
+  border-radius: 5px;
+}
+header nav div select:focus {
+  outline: none;
+}
+header nav div select option {
+  font-weight: bold;
 }
 
 main {

@@ -4,6 +4,7 @@ let app = new Vue({
     el: "#app",
     data:{
         arrayDischi: [],
+        selected: "Tutti",
     },
     mounted(){
         axios.get("http://localhost/php-ajax-dischi/bonus/parti_php/database.php")

@@ -14,7 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#app",
   data: {
-    arrayDischi: []
+    arrayDischi: [],
+    selected: "Tutti"
   },
   mounted: function mounted() {
     var _this = this;
