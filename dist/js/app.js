@@ -15,6 +15,14 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#app",
   data: {
     messaggio: "Vue con laravelmix"
+  },
+  mounted: function mounted() {
+    axios.get("http://localhost/php-ajax-dischi/milestone-2/parti_php/database.php").then(function (response) {
+      //verifico lo stato della risposta
+      //console.log(response);
+      console.log(response.data);
+    })["catch"](function (error) {//console.log(error);
+    });
   }
 });
 
